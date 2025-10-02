@@ -8,10 +8,11 @@ jobs:
     steps:
       - name: Set up Python
         uses: actions/setup-python@v4
-         Lab 5-ITEC 491
         with:
-                  python-version: '3.x'
-                - name: Install pytest
-                  run: pip install pytest
-                - name: Run tests
-               run: pytest
+          python-version: '3.x'
+
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest
